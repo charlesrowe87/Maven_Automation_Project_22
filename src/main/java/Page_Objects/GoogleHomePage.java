@@ -26,7 +26,7 @@ public class GoogleHomePage extends Reusable_Annotations_Loggers {
     //define all the webelements using @find by concept
     @FindBy(xpath = "//*[@name='q']")
     WebElement searchField;
-    @FindBy(xpath = "//*[@name='btNK']")
+    @FindBy(xpath = "//*[@name='btnK']")
     WebElement googleSearchButton;
     @FindBy(xpath = "//*[@name='links']")
     List<WebElement> listLinks;

@@ -85,6 +85,8 @@ public class Reusable_Actions_POM_Loggers {
         WebDriverWait wait = new WebDriverWait(driver,timeout);
         try{
             WebElement element = wait.until(ExpectedConditions.visibilityOf(xpath));
+            element.click();
+            element.clear();
             element.sendKeys(userValue);
             logger.log(LogStatus.PASS,"Successfully enter user value on element " + elementName);
         } catch (Exception e) {
